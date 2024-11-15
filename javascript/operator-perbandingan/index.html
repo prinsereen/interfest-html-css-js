@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<body>
+    <script>
+        // Deklarasi variabel untuk perbandingan
+        let a = 10;
+        let b = 20;
+        let c = 10;
+
+        // Operator perbandingan
+        console.log("a == b:", a == b); // false, karena 10 != 20
+        console.log("a == c:", a == c); // true, karena 10 == 10
+        console.log("a != b:", a != b); // true, karena 10 != 20
+        console.log("a > b:", a > b);   // false, karena 10 tidak lebih besar dari 20
+        console.log("a < b:", a < b);   // true, karena 10 lebih kecil dari 20
+        console.log("a >= c:", a >= c); // true, karena 10 >= 10
+        console.log("a <= b:", a <= b); // true, karena 10 <= 20
+
+        // Operator perbandingan identitas (strict equality)
+        console.log("a === c:", a === c); // true, karena tipe data dan nilai sama (10 == 10)
+        console.log("a === '10':", a === '10'); // false, karena tipe data berbeda (number vs string)
+        
+    </script>
+</body>
+</html>

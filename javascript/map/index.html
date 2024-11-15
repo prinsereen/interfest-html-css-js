@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<body>
+    <script>
+        // Array awal
+        let buah = ["Apel", "Pisang", "Jeruk", "Mangga"];
+
+        // Menggunakan map untuk mengubah setiap elemen menjadi huruf kapital
+        let buahUpper = buah.map(function(item) {
+            return item.toUpperCase();
+        });
+
+        // Menampilkan hasil di konsol
+        console.log("Array buah dalam huruf kapital:", buahUpper);
+
+        // Menggunakan map untuk mengubah setiap elemen menjadi objek
+        let buahObj = buah.map(function(item, index) {
+            return {
+                id: index + 1,
+                nama: item
+            };
+        });
+
+        // Menampilkan hasil objek
+        console.log("Array buah dalam bentuk objek:", buahObj);
+    </script>
+</body>
+</html>

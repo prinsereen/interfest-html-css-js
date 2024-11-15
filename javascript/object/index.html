@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<body>
+    <script>
+        // Membuat object
+        let mobil = {
+            merk: "Toyota",
+            model: "Avanza",
+            tahun: 2022,
+            warna: "Hitam",
+            kecepatanMax: 180
+        };
+        // Mengakses nilai properti object
+        console.log("Merk mobil:", mobil.merk); // Toyota
+        console.log("Model mobil:", mobil["model"]); // Avanza
+        // Menambah properti ke object
+        mobil.transmisi = "Manual";
+        console.log("Object setelah menambah properti transmisi:", mobil);
+        // Mengubah nilai properti di object
+        mobil.warna = "Putih";
+        console.log("Object setelah mengubah warna:", mobil);
+        // Menghapus properti dari object
+        delete mobil.kecepatanMax;
+        console.log("Object setelah menghapus properti kecepatanMax:", mobil);
+        // Menggunakan for...in untuk iterasi properti
+        console.log("\nProperti mobil:");
+        for (let key in mobil) {
+            console.log(key + ": " + mobil[key]);
+        }
+    </script>
+</body>
+</html>

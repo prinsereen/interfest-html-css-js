@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<body>
+    <script>
+        // Membuat array
+        let buah = ["Apel", "Pisang", "Jeruk", "Mangga"];
+        // Mengakses elemen array
+        console.log("Buah pertama:", buah[0]); // Apel
+        console.log("Buah kedua:", buah[1]);  // Pisang
+        // Menambah elemen ke array
+        buah.push("Semangka");
+        console.log("Array setelah push:", buah); // ["Apel", "Pisang", "Jeruk", "Mangga", "Semangka"]
+        // Menghapus elemen dari array
+        buah.pop(); // Menghapus elemen terakhir (Semangka)
+        console.log("Array setelah pop:", buah); // ["Apel", "Pisang", "Jeruk", "Mangga"]
+        // Menggunakan unshift untuk menambah elemen di awal array
+        buah.unshift("Strawberry");
+        console.log("Array setelah unshift:", buah); // ["Strawberry", "Apel", "Pisang", "Jeruk", "Mangga"]
+        // Menggunakan shift untuk menghapus elemen pertama
+        buah.shift();
+        console.log("Array setelah shift:", buah); // ["Apel", "Pisang", "Jeruk", "Mangga"]
+        // Menggunakan splice untuk menambah atau menghapus elemen pada posisi tertentu
+        buah.splice(2, 1, "Nanas"); // Menghapus 1 elemen dari index 2 dan menggantinya dengan "Nanas"
+        console.log("Array setelah splice:", buah); // ["Apel", "Pisang", "Nanas", "Mangga"]
+        // Menyaring array menggunakan filter
+        let panjangNamaBuah = buah.filter(b => b.length > 5);
+        console.log("Buah dengan nama lebih dari 5 karakter:", panjangNamaBuah); // ["Pisang", "Mangga"]
+        // Menggunakan map untuk memodifikasi setiap elemen
+        let buahUpper = buah.map(b => b.toUpperCase());
+        console.log("Array buah dalam huruf kapital:", buahUpper); // ["APEL", "PISANG", "NANAS", "MANGGA"]
+    </script>
+</body>
+</html>

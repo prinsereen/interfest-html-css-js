@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<body>
+    <script>
+        // Array untuk looping
+        let buah = ["Apel", "Pisang", "Jeruk", "Mangga"];
+        // 1. For loop
+        console.log("Menggunakan for loop:");
+        for (let i = 0; i < buah.length; i++) {
+            console.log(buah[i]);
+        }
+        // 2. For...of loop (lebih mudah digunakan untuk iterasi array)
+        console.log("\nMenggunakan for...of loop:");
+        for (let item of buah) {
+            console.log(item);
+        }
+        // 3. For...in loop (digunakan untuk objek, tetapi bisa digunakan untuk array)
+        console.log("\nMenggunakan for...in loop:");
+        for (let index in buah) {
+            console.log(index + ": " + buah[index]);
+        }
+        // 4. while loop
+        console.log("\nMenggunakan while loop:");
+        let j = 0;
+        while (j < buah.length) {
+            console.log(buah[j]);
+            j++;
+        }
+        // 5. do...while loop (dijalankan minimal sekali)
+        console.log("\nMenggunakan do...while loop:");
+        let k = 0;
+        do {
+            console.log(buah[k]);
+            k++;
+        } while (k < buah.length);
+    </script>
+</body>
+</html>

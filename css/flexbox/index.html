@@ -1,0 +1,31 @@
+<html lang="id">
+<head>
+    <style>
+        /* Flexbox Container */
+        .flex-container {
+            display: flex; /* Menyusun elemen-elemen anak dalam satu baris */
+            justify-content: space-between; /* Mengatur jarak antara elemen */
+            align-items: center; /* Menyusun elemen secara vertikal di tengah */
+            height: 200px; /* Menentukan tinggi kontainer */
+            background-color: lightgray; /* Memberikan latar belakang */
+        }
+
+        /* Flex Item */
+        .flex-item {
+            width: 100px; /* Lebar tiap item */
+            height: 100px; /* Tinggi tiap item */
+            background-color: lightcoral; /* Warna latar belakang item */
+            display: flex;
+            justify-content: center; /* Menyusun teks di tengah secara horizontal */
+            align-items: center; /* Menyusun teks di tengah secara vertikal */
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<body>
+    <script>
+        // Deklarasi variabel untuk operasi logika
+        let a = true;
+        let b = false;
+
+        // Operator logika
+        console.log("a && b:", a && b); // AND: true && false = false
+        console.log("a || b:", a || b); // OR: true || false = true
+        console.log("!a:", !a);          // NOT: !true = false
+        console.log("!(a && b):", !(a && b)); // NOT AND: !(true && false) = true
+        
+        // Penggunaan pada ekspresi logika
+        let x = 5;
+        let y = 10;
+        let z = 15;
+
+        console.log("(x < y) && (y < z):", (x < y) && (y < z)); // true karena (5 < 10) && (10 < 15)
+        console.log("(x > y) || (y < z):", (x > y) || (y < z)); // true karena (5 > 10) || (10 < 15) -> 10 < 15
+        console.log("!(x == y):", !(x == y)); // true karena !(5 == 10)
+    </script>
+</body>
+</html>
